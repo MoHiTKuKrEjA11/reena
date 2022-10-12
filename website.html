@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+     
+    background-image: url(lol.jpg) ;
+background-repeat: no-repeat;  
+background-color: black;
+color: white; 
+font-family: "Montserrat rev=1";
+}
+.left{
+    
+    display: inline-block;
+   position: absolute;
+   top: 14px;
+   left: 20px;
+   
+}
+.left img{
+    width:100px;
+}
+.left div{
+    text-align: center;
+}
+.mid{
+    display: block;
+    width: 60%;
+    margin: 14px auto;
+    
+}
+.right{
+    position: absolute;
+    right: 14px;
+    top: 14px;
+    display: inline-block;
+    
+}
+.navbar li{
+    display: inline-block;
+    font-size: 25px;
+
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 34px 23px;
+    
+}
+.navbar li a:hover{
+    text-decoration: underline;
+    color: blueviolet;
+    
+}
+.btn{
+    padding:5px;
+    margin:0px 16px;
+    background-color: aqua;
+    border:2px solid rosybrown;
+    cursor: pointer;
+    border-radius: 80px;
+    font-family:'Ubuntu', sans-serif;
+}
+.btn:hover{
+    background-color: crimson;
+}
+.x{
+    
+    margin: 130px 0px auto;
+    padding: 10px 486px;
+    font-size: 30px;
+    width: 30%;
+
+}
+.class{
+    text-align:center;
+    display: block;
+    padding:11px 0px;
+    margin: 14px 562px;
+    border-radius: 10px;
+    font-size: 21px;
+    font-family: "Montserrat rev=1";
+    border-radius: 50px;
+    color: deepskyblue;
+}
+.btn1{
+    padding:5px;
+    width: 6%;
+    margin: 21px 634px;
+    background-color: aqua;
+    border:2px solid rosybrown;
+    cursor: pointer;
+    border-radius: 60px;
+    font-family:'Ubuntu', sans-serif;
+    
+}
+.btn1:hover{
+    background-color: crimson;
+}
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+      <div class="left">
+        <img src="data:image/png;base64,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" alt="">
+      <div>Mohit Gym</div>
+      </div>
+      <!-- mid box for navbar -->
+      <div class="mid">
+          <ul class="navbar">
+<li><a href="#">Home</a> </li>
+<li><a href="#">About us</a></li>
+<li><a href="#">Fitness calculator</a> </li>
+<li><a href="#">Contact us</a> </li>
+          </ul>
+      </div>
+      <!-- right box for buttons -->
+      <div class="right">
+      <button class="btn">Call Us</button><button class="btn">Email Us</button>
+      </div>
+    </header>
+    <div class="rock">
+     <div class="x">
+        LOGIN YOUR INFORMATION
+     </div>
+     <div class="class">
+     Enter your name                          <input type="text"> 
+     </div>
+     <div class="class">
+     Enter your phone number <input type="number">
+    </div>
+    <button class="btn1">Submit</button>
+</div>
+</body>
+</html>
